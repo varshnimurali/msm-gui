@@ -14,7 +14,7 @@
 
 <hr>
 
-<form action="/modify_director_record/<%= @the_director.id %>" method="post">
+<form action="/directors/<%= @the_director.id %>" method="post">
   <div>
   <label for="name_field">Name</label>
   <input id="name_field" type="text" name="the_name" value="<%= @the_director.name %>">
@@ -27,7 +27,7 @@
    
   <div>
   <label for="bio_field">Bio</label>
-  <input id="bio_field" type="text" value="<%= @the_director.bio %>">
+  <input id="bio_field" type="text" name="the_bio" value="<%= @the_director.bio %>">
   </div>
   
   <div>
