@@ -7,6 +7,10 @@ class MoviesController < ApplicationController
     m.description = params.fetch("the_description")
     m.image = params.fetch("the_image")
     m.director_id = params.fetch("the_director_id")
+
+    m.save
+
+    redirect_to("/movies")
   end
   
   def index
